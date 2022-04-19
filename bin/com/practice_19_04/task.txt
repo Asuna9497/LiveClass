@@ -1,0 +1,15 @@
+1. Write a program to do multiplication and divison of 2 numbers
+2. Write a program to calculate square and cube of given number;
+	(Hint: int sqr= n * n; int cube= n*n*n;)
+
+3. Write a program to calculate Simple Intrest
+	(Hint: float intrest= (p * r * n) /100)
+
+4. Write a program to compare 2 number and print the larger one
+5. Write a program to find out the given number is even or odd.
+	(Hint: if(num%2 == 0) even else ODD )
+
+6. Write a program to print first 50 even numbers using for loop.
+7. write a program to print first 50 odd numbers using while loop
+
+link- https://github.com/sonam-niit/Java-Evening-8-11/blob/main/Phase-1/Session-2/Task%20for%20Session-2.txt
