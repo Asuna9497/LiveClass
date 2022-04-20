@@ -1,0 +1,28 @@
+Task 1: Write a program to create an Aritmetic Calculator
+----------------------------------------------------------------
+which will do the simple arithmetic operations
+
+Addition Subtraction multiplication and division
+
+	Step1: ask user to ennter number, num1 and num2
+	Step2: ask user to enter 1 for addition, 2 for Sub, 3 for mul and 4 for Div
+		Hint: if(op==1)
+			{
+				result= num1+num2;
+			}
+
+	Step3: check the condition and according to that perform the operations
+	Step4: Print Result
+-----------------------------------------------------------
+1. Write a program to create a method for finding a square and cube of a number.
+2. Write a program and create method to find out area and perimeter of Rectangle.
+3. Write a program and create method to print first 100 odd number.
+--------------------------------------------------------
+
+4. Write program to create a class Employee where employee has empCode(int), empName(String),
+empEmail(String) 
+		create constructor to initialize this values
+		create one display method to display it
+	
+		creat 3 objects from main method and pass parameters in your constructor
+		call display method to print employee
