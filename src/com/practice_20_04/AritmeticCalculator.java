@@ -70,7 +70,6 @@ public class AritmeticCalculator {
 	 * @return true/false
 	 */
 	private static boolean wantToContinue() {
-		// used try with resource
 		Scanner sc = new Scanner(System.in);
 		System.out.println("you want to perform other operations? Enter Yes/No");
 		if (sc.next().equalsIgnoreCase("Yes")) {
