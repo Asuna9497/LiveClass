@@ -16,51 +16,51 @@ public class AritmeticCalculator {
 		int num2;
 		int operation;
 		boolean wantToContinue = false;
-		// used try with resource
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			// used do-while to continue the operation chain
-			do {
-				// taking user inputs
-				System.out.println("Enter first number:");
-				num1 = sc.nextInt();
+		// used do-while to continue the operation chain
+		do {
+			// taking user inputs
+			System.out.println("Enter first number:");
+			num1 = sc.nextInt();
 
-				System.out.println("Enter second Number: ");
-				num2 = sc.nextInt();
+			System.out.println("Enter second Number: ");
+			num2 = sc.nextInt();
 
-				System.out.println("enter operation number you want to perform:(for sum= 1, sub=2, multi =3, div=4) :");
-				operation = sc.nextInt();
+			System.out.println("enter operation number you want to perform:(for sum= 1, sub=2, multi =3, div=4) :");
+			operation = sc.nextInt();
 
-				switch (operation) {
-				case sum: {
-					int sum = num1 + num2;
-					System.out.println("sum = " + sum);
-					wantToContinue = wantToContinue();
-					break;
-				}
-				case subtraction: {
-					int sub = num1 - num2;
-					System.out.println("subtraction = " + sub);
-					wantToContinue = wantToContinue();
-					break;
-				}
-				case multiplication: {
-					System.out.println("Multiplication = " + num1 * num2);
-					wantToContinue = wantToContinue();
-					break;
-				}
-				case division: {
-					System.out.println("divisions = " + num1 % num2);
-					wantToContinue = wantToContinue();
-					break;
-				}
-				default:
-					System.out.println("no defined operation, please enter correct one");
-					wantToContinue = wantToContinue();
-					break;
-				}
-			} while (wantToContinue);
-		}
+			switch (operation) {
+			case sum: {
+				int sum = num1 + num2;
+				System.out.println("sum = " + sum);
+				wantToContinue = wantToContinue();
+				break;
+			}
+			case subtraction: {
+				int sub = num1 - num2;
+				System.out.println("subtraction = " + sub);
+				wantToContinue = wantToContinue();
+				break;
+			}
+			case multiplication: {
+				int multi = num1 * num2;
+				System.out.println("Multiplication = " + multi);
+				wantToContinue = wantToContinue();
+				break;
+			}
+			case division: {
+				int div = num1 / num2;
+				System.out.println("divisions = " + div);
+				wantToContinue = wantToContinue();
+				break;
+			}
+			default:
+				System.out.println("no defined operation, please enter correct one");
+				wantToContinue = wantToContinue();
+				break;
+			}
+		} while (wantToContinue);
 
 	}
 
@@ -71,13 +71,12 @@ public class AritmeticCalculator {
 	 */
 	private static boolean wantToContinue() {
 		// used try with resource
-		try (Scanner sc = new Scanner(System.in)) {
-			System.out.println("you want to perform other operations? Enter Yes/No");
-			if (sc.next().equalsIgnoreCase("Yes")) {
-				return true;
-			} else {
-				return false;
-			}
+		Scanner sc = new Scanner(System.in);
+		System.out.println("you want to perform other operations? Enter Yes/No");
+		if (sc.next().equalsIgnoreCase("Yes")) {
+			return true;
+		} else {
+			return false;
 		}
 	}
 
