@@ -1,4 +1,4 @@
-package com.practice_20_04;
+package com.project;
 
 import java.util.Scanner;
 
