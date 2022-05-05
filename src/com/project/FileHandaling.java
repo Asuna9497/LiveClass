@@ -64,10 +64,10 @@ public class FileHandaling {
 		
 		try {
 			Files.write(filePath, content.getBytes());
-			System.out.println("content appended successfully");
+			System.out.println("content written successfully");
 
 		} catch (IOException e) {
-			System.out.println("failed to append content");
+			System.out.println("failed to write content");
 			e.printStackTrace();
 		}
 	}
@@ -79,6 +79,7 @@ public class FileHandaling {
 			BufferedReader reader =
 			        new BufferedReader(fr);
 			reader.lines().forEach(System.out::println);
+			System.out.println("content read successfully");
 			reader.close();
 		} catch (IOException e) {
 			System.out.println("Failed to read a file");
